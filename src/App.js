@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import ImageCard from './components/ImageCard';
 import ImageSearch from './components/ImageSearch';
+import Navbar from './components/Navbar';
 
 function App() {
   const [images, setImages] = useState([])
@@ -11,7 +12,6 @@ function App() {
 
   
   useEffect(() => {
-    console.log("search text changed")
     fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_API_KEY}&q=${search}&image_type=photo&pretty=true`)
       
     .then(res => res.json())
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="container mx-auto">
+      <Navbar />
       <ImageSearch searchText={(text)=> setSearch(text)}/>
 
       {!isLoading && images.length === 0 && <div><h1 className='text-6xl text-center mx-auto mt-32'>No Images Found</h1></div>}
