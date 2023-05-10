@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/imageella/static/css/main.b6a04192.css",
+    "main.js": "/imageella/static/js/main.dda5d7e3.js",
+    "index.html": "/imageella/index.html",
+    "main.b6a04192.css.map": "/imageella/static/css/main.b6a04192.css.map",
+    "main.dda5d7e3.js.map": "/imageella/static/js/main.dda5d7e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6a04192.css",
+    "static/js/main.dda5d7e3.js"
+  ]
+}
